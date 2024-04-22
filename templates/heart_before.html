@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model Input Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ML Model Input Form</h1>
+    <form id="inputForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <label for="chestPainType">Chest Pain Type:</label>
+        <select id="chestPainType" name="chestPainType" required>
+            <option value="1">ATA</option>
+            <option value="2">NAP</option>
+            <option value="0">ASY</option>
+            <option value="3">TA</option>
+        </select>
+
+        <label for="restingBP">Resting Blood Pressure:</label>
+        <input type="number" id="restingBP" name="restingBP" required>
+
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="number" id="cholesterol" name="cholesterol" required>
+
+        <label for="fastingBS">Fasting Blood Sugar:</label>
+        <input type="number" id="fastingBS" name="fastingBS" required>
+
+        <label for="restingECG">Resting ECG:</label>
+        <select id="restingECG" name="restingECG" required>
+            <option value="1">Normal</option>
+            <option value="2">ST</option>
+            <option value="0">LVH</option>
+        </select>
+
+        <label for="maxHR">Max Heart Rate:</label>
+        <input type="number" id="maxHR" name="maxHR" required>
+
+        <label for="exerciseAngina">Exercise Induced Angina:</label>
+        <select id="exerciseAngina" name="exerciseAngina" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        <label for="oldpeak">Oldpeak:</label>
+        <input type="number" id="oldpeak" name="oldpeak" required step="0.01">
+
+        <label for="stSlope">ST Slope:</label>
+        <select id="stSlope" name="stSlope" required>
+            <option value="2">Up</option>
+            <option value="1">Flat</option>
+            <option value="0">Down</option>
+        </select>
+        <input type="submit" , value='predict!' >
+    </form>
+
+    <img src='static\flower1.jpg' alt="flower">
+    
+</body>
+</html>
